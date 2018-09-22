@@ -1,0 +1,624 @@
+body {
+  margin: 0 auto;
+}
+
+#nav-bar {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background: #2a3f54;
+  font-family: 'Play', sans-serif;
+}
+#nav-bar .logo {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#nav-bar .logo .logo-img {
+  display: inline-block;
+}
+#nav-bar .logo .logo-img img {
+  width: 35px;
+}
+#nav-bar .logo .logo-name {
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  text-align: justify center;
+}
+#nav-bar .logo .logo-name h3 {
+  margin: 0px;
+  text-align: justify center;
+  color: #fff;
+  font-size: 25px;
+}
+#nav-bar .navbar-right {
+  margin-right: 0px;
+  float: right !important;
+  margin: 0 auto;
+}
+#nav-bar .language {
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#nav-bar .dropdown {
+  display: inline-block;
+}
+#nav-bar .dropdown button {
+  background: #2a3f54;
+  display: inline-block;
+  color: #9d9d9d;
+  border: none;
+  box-shadow: none;
+}
+#nav-bar .dropdown button:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+}
+#nav-bar .dropdown .dropdown-menu {
+  position: absolute;
+  left: -80px;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+}
+#nav-bar .dropdown .dropdown-menu a:hover {
+  background: #9d9d9d;
+}
+#nav-bar .dropdown .dropdown-menu a .fas {
+  margin-left: 80px;
+}
+
+#left-menu {
+  width: 230px;
+  height: calc(100vh + 210px);
+  background: #2a3f54;
+  color: #9d9d9d;
+  font-family: 'Play', sans-serif;
+  position: relative;
+  display: inline-block;
+}
+#left-menu .menu-elements {
+  position: relative;
+  padding: 10px;
+}
+#left-menu .menu-elements li {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 20px;
+  margin-left: -20px;
+  margin-right: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  list-style-type: none;
+  cursor: pointer;
+}
+#left-menu .menu-elements li:nth-child(7) {
+  background: rgba(0, 0, 0, 0.1);
+}
+#left-menu .menu-elements li:nth-child(7) i {
+  color: #fff;
+}
+#left-menu .menu-elements li:nth-child(7) a {
+  color: #fff;
+}
+#left-menu .menu-elements li:hover {
+  color: #9d9d9d;
+  background: rgba(0, 0, 0, 0.2);
+}
+#left-menu .menu-elements li a {
+  text-decoration: none;
+  color: #9d9d9d;
+}
+#left-menu .menu-elements li a span i {
+  float: right;
+  margin-right: 0px;
+  color: #9d9d9d;
+  margin-right: 10px;
+}
+#left-menu .menu-elements li a span i:hover {
+  color: #fff;
+}
+#left-menu .menu-elements li a:hover {
+  color: #fff;
+}
+
+#setting {
+  width: calc(100% - 230px);
+  padding: 10px;
+  padding-bottom: 0px;
+  display: inline-block;
+  position: absolute;
+  top: 45px;
+  margin-left: -4px;
+  font-family: 'Play', sans-serif;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+#setting .head-page {
+  margin: 0 auto;
+  height: 50px;
+  padding: 10px;
+  margin: 0 auto;
+  color: #333;
+  position: relative;
+  background-color: #f5f5f5;
+  border: 1px solid lightgray;
+  text-align: center;
+}
+#setting .head-page .left {
+  float: left;
+  margin-left: 0px;
+  position: relative;
+}
+#setting .head-page .left i {
+  margin-right: 10px;
+}
+#setting .head-page a {
+  float: right;
+  margin-right: 0px;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+#setting .add-user {
+  margin: 0 auto;
+  height: 40px;
+  padding: 10px;
+  background: #2a3f54;
+  position: relative;
+  margin-top: 15px;
+}
+#setting .add-user .left {
+  color: #fff;
+  margin-left: 0px;
+  float: left;
+  position: relative;
+}
+#setting .add-user .left i {
+  margin-right: 10px;
+}
+#setting .add-user .right {
+  height: 40px;
+  float: right;
+  margin-right: 0px;
+  background: #6ca500;
+  position: relative;
+  padding: 8px 15px 4px 20px;
+  margin-right: -10px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+#setting .add-user .right a {
+  color: white;
+  font-size: 20px;
+}
+#setting .show {
+  margin: 0 auto;
+  height: 40px;
+  padding: 10px;
+  position: relative;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  color: #333;
+  font-family: 'Play', sans-serif;
+}
+#setting .show .left-elemets {
+  float: left;
+  margin-left: 0px;
+  display: inline-block;
+  position: relative;
+  color: #555;
+}
+#setting .show .left-elemets select {
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+#setting .show .right-elements {
+  float: right;
+  margin-right: 0px;
+  display: inline-block;
+  position: relative;
+  margin-top: -25px;
+}
+#setting .show .right-elements input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-appearance: searchfield;
+  background: #fff;
+}
+#setting .setting-table {
+  padding: 10px;
+  background: #f5f5f5;
+}
+#setting .setting-table .table {
+  border: 1px solid #ddd;
+}
+#setting .setting-table .table .number {
+  width: 59px;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#setting .setting-table .table .number span {
+  float: left;
+  margin-left: 0px;
+}
+#setting .setting-table .table .number i {
+  margin-top: 5px;
+  float: right;
+  margin-right: 0px;
+  padding-left: 10px;
+}
+#setting .setting-table .table .user-id {
+  width: 112px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#setting .setting-table .table .user-id span {
+  float: left;
+  margin-left: 0px;
+}
+#setting .setting-table .table .user-id i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#setting .setting-table .table .name {
+  width: 105px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#setting .setting-table .table .name span {
+  float: left;
+  margin-left: 0px;
+}
+#setting .setting-table .table .name i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#setting .setting-table .table .email {
+  width: 249px;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#setting .setting-table .table .email span {
+  float: left;
+  margin-left: 0px;
+}
+#setting .setting-table .table .email i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#setting .setting-table .table .phone {
+  width: 138px;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#setting .setting-table .table .phone span {
+  float: left;
+  margin-left: 0px;
+}
+#setting .setting-table .table .phone i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#setting .setting-table .table .username {
+  width: 136px;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#setting .setting-table .table .username span {
+  float: left;
+  margin-left: 0px;
+}
+#setting .setting-table .table .username i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#setting .setting-table .table .access-type {
+  width: 154px;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#setting .setting-table .table .access-type span {
+  float: left;
+  margin-left: 0px;
+}
+#setting .setting-table .table .access-type i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#setting .setting-table .table .action {
+  width: 125px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#setting .setting-table .table .action span {
+  float: left;
+  margin-left: 0px;
+}
+#setting .setting-table .table .action i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#setting .setting-table .table td {
+  line-height: 1.42857143;
+  padding: 8px;
+  overflow: hidden;
+  box-sizing: content-box;
+  color: #333;
+  font-size: 14px;
+}
+#setting .setting-table .table td button {
+  outline: none;
+  cursor: pointer;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  background: #5bc0de;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#setting .setting-table .table td button:first-child {
+  background: #5bc0de;
+}
+#setting .setting-table .table td button:first-child a {
+  color: #fff;
+}
+#setting .setting-table .table td button:first-child:hover {
+  background: #46b8da;
+}
+#setting .setting-table .table td button:nth-child(2) {
+  background: #5bc0de;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+#setting .setting-table .table td button:nth-child(2) a {
+  color: #fff;
+}
+#setting .setting-table .table td button:nth-child(2):hover {
+  background: #46b8da;
+}
+#setting .setting-table .table td button:last-child {
+  background: #d9534f;
+}
+#setting .setting-table .table td button:last-child a {
+  color: #fff;
+}
+#setting .setting-table .table td button:last-child:hover {
+  background: #d43f3a;
+}
+#setting .footer-page {
+  position: relative;
+  margin-top: -10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  padding-bottom: 50px;
+}
+#setting .footer-page .ftr-left {
+  margin-top: 5px;
+  padding-right: 10px;
+  float: left;
+  margin-left: 0px;
+}
+#setting .footer-page .ftr-right {
+  margin-top: 5px;
+  float: right;
+  margin-right: 0px;
+}
+#setting .footer-page .ftr-right .number {
+  background: #337ab7;
+  color: #fff;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+#setting .footer-page .ftr-right button {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  outline: none;
+  margin: 0px auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  cursor: not-allowed;
+}
+#setting .footer-page .ftr-right button a {
+  cursor: not-allowed;
+  color: #777;
+  text-decoration: none;
+}
+
+#setting-body {
+  width: calc(100% - 230px);
+  padding-bottom: 0px;
+  display: inline-block;
+  position: absolute;
+  top: 390px;
+  font-family: 'Play', sans-serif;
+}
+#setting-body .row {
+  font-family: 'Play', sans-serif;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#setting-body .row .col-md-4 {
+  position: relative;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+#setting-body .row .col-md-4 .update {
+  position: relative;
+  margin: 0 auto;
+  height: 40px;
+  padding: 10px;
+  background: #012639;
+  position: relative;
+}
+#setting-body .row .col-md-4 .update a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1.42857143;
+}
+#setting-body .row .col-md-4 .update .left {
+  color: #fff;
+  margin-left: 0px;
+  float: left;
+  position: relative;
+}
+#setting-body .row .col-md-4 .update .left i {
+  content: "\f06c";
+  margin-right: 10px;
+}
+#setting-body .row .col-md-4 .update .right {
+  height: 40px;
+  float: right;
+  margin-right: 0px;
+  background: #6ca500;
+  position: relative;
+  padding: 8px 15px 4px 20px;
+  margin-right: -10px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+#setting-body .row .col-md-4 .update .right a {
+  color: white;
+  font-size: 20px;
+}
+#setting-body .row .col-md-4 .add-type {
+  position: relative;
+  margin: 0 auto;
+  height: 40px;
+  padding: 10px;
+  background: #012639;
+  position: relative;
+}
+#setting-body .row .col-md-4 .add-type a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1.42857143;
+}
+#setting-body .row .col-md-4 .add-type .left {
+  color: #fff;
+  margin-left: 0px;
+  float: left;
+  position: relative;
+}
+#setting-body .row .col-md-4 .add-type .left i {
+  content: "\f0c0";
+  margin-right: 10px;
+}
+#setting-body .row .col-md-4 .add-type .right {
+  height: 40px;
+  float: right;
+  margin-right: 0px;
+  background: #6ca500;
+  position: relative;
+  padding: 8px 15px 4px 20px;
+  margin-right: -10px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+#setting-body .row .col-md-4 .add-type .right a {
+  color: white;
+  font-size: 20px;
+}
+#setting-body .row .col-md-4 .add-category {
+  position: relative;
+  margin: 0 auto;
+  height: 40px;
+  padding: 10px;
+  background: #012639;
+  position: relative;
+}
+#setting-body .row .col-md-4 .add-category a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1.42857143;
+}
+#setting-body .row .col-md-4 .add-category .left {
+  color: #fff;
+  margin-left: 0px;
+  float: left;
+  position: relative;
+}
+#setting-body .row .col-md-4 .add-category .left i {
+  content: "\f02d";
+  margin-right: 10px;
+}
+#setting-body .row .col-md-4 .add-category .right {
+  height: 40px;
+  float: right;
+  margin-right: 0px;
+  background: #6ca500;
+  position: relative;
+  padding: 8px 15px 4px 20px;
+  margin-right: -10px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+#setting-body .row .col-md-4 .add-category .right a {
+  color: white;
+  font-size: 20px;
+}

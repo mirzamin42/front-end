@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+  <title></title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="right.css">
+  <link rel="stylesheet" type="text/css" href="grid.css">
+</head>
+<body>
+<section id="nav-bar">
+  <div class="logo">
+    <div class="logo-img">
+      <img src="images/logo_images/logo.png">
+    </div>
+    <div class="logo-name">
+      <h3>MS Library</h3>
+    </div>
+    <div class="navbar-right">
+      <select type="text" class="language">
+        <option value="ar">Arabic</option>
+        <option value="bn">Bangla</option>
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="ge">Germany</option>
+        <option value="hi">Hindi</option>
+        <option value="sp">Spanish</option>
+        <option value="ur">Urdu</option>
+      </select>
+      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          MS Library
+          <span><i class="fas fa-user-alt"></i></span>
+          </button>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Log Out <i class="fas fa-power-off"></i></a>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="left-menu">
+  <ul class="menu-elements">
+    <li><a href="../index.html">tablero <span><i class="fas fa-tachometer-alt"></i></span></a></li>
+    <li><a href="../member/member.html">miembros <span><i class="fas fa-users"></i></span></a></li>
+    <li><a href="../book_archive/book.html">archivo de libro <span><i class="fas fa-book"></i></span></a></li>
+    <li><a href="../issue&return/issue.html">emitido y devuelto <span><i class="fas fa-puzzle-piece"></i></span></a></li>
+    <li><a href="../notice/notice.html">aviso <span><i class="fas fa-envelope"></i></span></a></li>
+    <li><a href="../report/report.html">informe <span><i class="far fa-chart-bar"></i></span></a></li>
+    <li><a href="../setting/setting.html">ajustes <span><i class="fas fa-cog"></i></span></a></li>
+  </ul>
+</section>
+<section id="report2">
+  <div class="head-page">
+    <div class="left">
+      <i class="far fa-chart-bar"></i>
+      <span>informe</span>
+    </div>
+    <a href="../index.html">
+      <i class="fas fa-long-arrow-alt-left"></i>
+      Back
+    </a>
+  </div>
+</section>
+<section id="report-right-menu">
+  <a href="../report/report.html">
+    <div class="col-6" style="position: relative; float: left; margin-left: 0px; background-color: #f5f5f5; color: #337ab7; border-bottom: 1px solid lightgray;">
+      <i class="fas fa-book"></i>
+      <span>Información de libros</span>
+    </div>
+  </a>
+  <div class="col-6" style="position: relative; float: right; margin-right: 0px; background: #fff; color: #555">
+    <i class="fas fa-users"></i>
+    <span>Detalles de los miembros</span>
+  </div>
+</section>
+<section id="act-element">
+  <div class="active-body">
+    <div class="active-inactive">
+      <div class="col-md-1">
+        Active: 8
+      </div>
+      <a href="../report3/left.html">
+        <div class="col-md-1">
+          Inactive:  0
+        </div>
+      </a>
+    </div>
+    <div class="download">
+      <button class="btn-xs btn-default">
+        <i class="fas fa-download"></i>
+        <span>Download All</span>
+      </button>
+    </div>
+    <div class="show">
+      <div class="left-elements">
+        <span>Show</span>
+        <select>
+          <option value="10">10</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+        <span>entries</span>
+      </div>
+      <div class="right-elements">
+        <span>Search:</span>
+        <input type="text">
+      </div>
+    </div>
+    <div class="report-table2">
+      <table class="table table-bordered table-striped">
+          <thead>
+              <tr>
+                <th class="number">
+                  <span>#</span>
+                  <i class="fas fa-sort-amount-down"></i>
+                </th>
+                <th class="id">
+                  <span>ID</span>
+                  <i class="fas fa-sort-amount-down"></i>
+                </th>
+                <th class="name">
+                  <span>Nombre</span>
+                  <i class="fas fa-sort-amount-down"></i>
+                </th>
+                <th class="m-since">
+                  <span>Fecha de inscripción</span>
+                  <i class="fas fa-sort-amount-down"></i>
+                </th>
+                <th class="type">
+                  <span>Tipo</span>
+                  <i class="fas fa-sort-amount-down"></i>
+                </th>
+                <th class="status">
+                  <span>estado</span>
+                  <i class="fas fa-sort-amount-down"></i>
+                </th>
+                <th class="phone">
+                  <span>Teléfono</span>
+                  <i class="fas fa-sort-amount-down"></i>
+                </th>
+                <th class="issued">
+                  <span>emitido</span>
+                  <i class="fas fa-sort-amount-down"></i>
+                </th>
+                <th class="due">
+                  <span>pagadero</span>
+                  <i class="fas fa-sort-amount-down"></i>
+                </th>
+                <th class="total-fine">
+                  <span>Total fino</span>
+                  <i class="fas fa-sort-amount-down"></i>
+                </th>
+                <th class="due-fine">
+                  <span>pagadero</span>
+                  <i class="fas fa-sort-amount-down"></i>
+                </th>
+              </tr>
+            </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>1010</td>
+              <td>Shadab Ahmad</td>
+              <td>19-09-2018</td>
+              <td>Student</td>
+              <td>
+                <div class="th-body">
+                  Active
+                </div>
+              </td>
+              <td>8294599491</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>1009</td>
+              <td>Dfsdfsd</td>
+              <td>17-01-2018</td>
+              <td>Guest</td>
+              <td>
+                <div class="th-body">
+                  <span>Active</span>
+                </div>
+              </td>
+              <td>01912219987</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>1008</td>
+              <td>Dfsdfsd</td>
+              <td>17-01-2018  </td>
+              <td>Permanent</td>
+              <td>
+                <div class="th-body">
+                  <span>Active</span>
+                </div>
+              </td>
+              <td>3442334234</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>1007</td>
+              <td>Uthpal Pal</td>
+              <td>10-01-2018</td>
+              <td>Permanent</td>
+              <td>
+                <div class="th-body">
+                  <span>Active</span>
+                </div>
+              </td>
+              <td>01917177771</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>1006</td>
+              <td>Xyz</td>
+              <td>01-01-2010</td>
+              <td>Life Time</td>
+              <td>
+                <div class="th-body">
+                  <span>Active</span>
+                </div>
+              </td>
+              <td>00000000000</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>1004</td>
+              <td>Uthpal Pal</td>
+              <td>01-12-2011</td>
+              <td>Life Time</td>
+              <td>
+                <div class="th-body">
+                  <span>Active</span>
+                </div>
+              </td>
+              <td>00000000000</td>
+              <td>2</td>
+              <td>0</td>
+              <td>5</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>1003</td>
+              <td>MD. Mustafizur Rahman </td>
+              <td>10-02-2016  </td>
+              <td>Permanent</td>
+              <td>
+                <div class="th-body">
+                  <span>Active</span>
+                </div>
+              </td>
+              <td>00000000000</td>
+              <td>3</td>
+              <td>0</td>
+              <td>5</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>1002</td>
+              <td>Macklane Pappu Mazumder</td>
+              <td>01-12-2017</td>
+              <td>Permanent</td>
+              <td>
+                <div class="th-body">
+                  <span>Active</span>
+                </div>
+              </td>
+              <td>00000000000</td>
+              <td>5</td>
+              <td>0</td>
+              <td>27</td>
+              <td>0</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer-page">
+      <div class="ftr-left">Showing 1 to 8 of 8 entries
+      </div>
+      <div class="ftr-right">
+        <button>
+          <a href="#" class="previous"> Previous</a>
+        </button>
+        <button class="number"><a href="#" class="number">  1</a>
+        </button>
+        <button>
+          <a href="#" class="next">Next </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

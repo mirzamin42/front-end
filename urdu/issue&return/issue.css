@@ -1,0 +1,448 @@
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#nav-bar {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background: #2a3f54;
+  font-family: 'Play', sans-serif;
+}
+#nav-bar .logo {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#nav-bar .logo .logo-img {
+  display: inline-block;
+}
+#nav-bar .logo .logo-img img {
+  width: 35px;
+}
+#nav-bar .logo .logo-name {
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  text-align: justify center;
+}
+#nav-bar .logo .logo-name h3 {
+  margin: 0px;
+  text-align: justify center;
+  color: #fff;
+  font-size: 25px;
+}
+#nav-bar .navbar-right {
+  margin-right: 0px;
+  float: right !important;
+  margin: 0 auto;
+}
+#nav-bar .language {
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#nav-bar .dropdown {
+  display: inline-block;
+}
+#nav-bar .dropdown button {
+  background: #2a3f54;
+  display: inline-block;
+  color: #9d9d9d;
+  border: none;
+  box-shadow: none;
+}
+#nav-bar .dropdown button:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+}
+#nav-bar .dropdown .dropdown-menu {
+  position: absolute;
+  left: -80px;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+}
+#nav-bar .dropdown .dropdown-menu a:hover {
+  background: #9d9d9d;
+}
+#nav-bar .dropdown .dropdown-menu a .fas {
+  margin-left: 80px;
+}
+
+#left-menu {
+  width: 230px;
+  height: calc(100vh + 80px);
+  background: #2a3f54;
+  color: #9d9d9d;
+  font-family: 'Play', sans-serif;
+  position: relative;
+  display: inline-block;
+}
+#left-menu .menu-elements {
+  position: relative;
+  padding: 10px;
+}
+#left-menu .menu-elements li {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 20px;
+  margin-left: -20px;
+  margin-right: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  list-style-type: none;
+  cursor: pointer;
+}
+#left-menu .menu-elements li:nth-child(4) {
+  background: rgba(0, 0, 0, 0.1);
+}
+#left-menu .menu-elements li:nth-child(4) i {
+  color: #fff;
+}
+#left-menu .menu-elements li:nth-child(4) a {
+  color: #fff;
+}
+#left-menu .menu-elements li:hover {
+  color: #9d9d9d;
+  background: rgba(0, 0, 0, 0.2);
+}
+#left-menu .menu-elements li a {
+  text-decoration: none;
+  color: #9d9d9d;
+}
+#left-menu .menu-elements li a span i {
+  float: right;
+  margin-right: 0px;
+  color: #9d9d9d;
+  margin-right: 10px;
+}
+#left-menu .menu-elements li a span i:hover {
+  color: #fff;
+}
+#left-menu .menu-elements li a:hover {
+  color: #fff;
+}
+
+#issue {
+  width: calc(100% - 230px);
+  padding: 10px;
+  padding-bottom: 0px;
+  display: inline-block;
+  position: absolute;
+  top: 45px;
+  margin-left: -4px;
+  font-family: 'Play', sans-serif;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+#issue .head-page {
+  margin: 0 auto;
+  height: 50px;
+  padding: 10px;
+  margin: 0 auto;
+  color: #333;
+  position: relative;
+  background-color: #f5f5f5;
+  border: 1px solid lightgray;
+  text-align: center;
+}
+#issue .head-page .left {
+  float: left;
+  margin-left: 0px;
+  position: relative;
+}
+#issue .head-page .left i {
+  margin-right: 10px;
+}
+#issue .head-page a {
+  float: right;
+  margin-right: 0px;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+#issue .add-member {
+  margin: 0 auto;
+  height: 40px;
+  padding: 10px;
+  background: #2a3f54;
+  position: relative;
+  margin-top: 20px;
+}
+#issue .add-member .left {
+  color: white;
+  margin-left: 0px;
+  float: left;
+  position: relative;
+}
+#issue .add-member .left i {
+  margin-right: 10px;
+}
+#issue .add-member .right {
+  height: 40px;
+  float: right;
+  margin-right: 0px;
+  background: #6ca500;
+  position: relative;
+  padding: 8px 15px 4px 20px;
+  margin-right: -10px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+#issue .add-member .right a {
+  color: white;
+  font-size: 20px;
+}
+#issue .show {
+  margin: 0 auto;
+  height: 40px;
+  padding: 10px;
+  position: relative;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  color: #333;
+  font-family: 'Play', sans-serif;
+}
+#issue .show .left-elemets {
+  float: left;
+  margin-left: 0px;
+  display: inline-block;
+  position: relative;
+  color: #555;
+}
+#issue .show .left-elemets select {
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+#issue .show .right-elements {
+  float: right;
+  margin-right: 0px;
+  display: inline-block;
+  position: relative;
+  margin-top: -25px;
+}
+#issue .show .right-elements input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-appearance: searchfield;
+  background: #fff;
+}
+#issue .issue-table {
+  padding: 10px;
+  background: #f5f5f5;
+}
+#issue .issue-table .table {
+  border: 1px solid #ddd;
+}
+#issue .issue-table .table .number {
+  width: 82px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#issue .issue-table .table .number span {
+  float: left;
+  margin-left: 0px;
+}
+#issue .issue-table .table .number i {
+  margin-top: 5px;
+  float: right;
+  margin-right: 0px;
+  padding-left: 10px;
+}
+#issue .issue-table .table .id {
+  width: 94px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#issue .issue-table .table .id span {
+  float: left;
+  margin-left: 0px;
+}
+#issue .issue-table .table .id i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#issue .issue-table .table .book {
+  width: 128px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#issue .issue-table .table .book span {
+  float: left;
+  margin-left: 0px;
+}
+#issue .issue-table .table .book i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#issue .issue-table .table .date {
+  width: 191px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#issue .issue-table .table .date span {
+  float: left;
+  margin-left: 0px;
+}
+#issue .issue-table .table .date i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#issue .issue-table .table .d-date {
+  width: 176px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#issue .issue-table .table .d-date span {
+  float: left;
+  margin-left: 0px;
+}
+#issue .issue-table .table .d-date i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#issue .issue-table .table .status {
+  width: 146px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#issue .issue-table .table .status span {
+  float: left;
+  margin-left: 0px;
+}
+#issue .issue-table .table .status i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#issue .issue-table .table .fine {
+  font-family: 'Glyphicons Halflings';
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+#issue .issue-table .table .fine span {
+  float: left;
+  margin-left: 0px;
+}
+#issue .issue-table .table .fine i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#issue .issue-table .table .action {
+  width: 145px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Glyphicons Halflings';
+  cursor: pointer;
+}
+#issue .issue-table .table .action span {
+  float: left;
+  margin-left: 0px;
+}
+#issue .issue-table .table .action i {
+  float: right;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+#issue .issue-table .table tr {
+  display: table-row;
+  vertical-align: inherit;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+#issue .issue-table .table tr td {
+  padding: 8px;
+  overflow: hidden;
+  box-sizing: content-box;
+  text-align: center;
+  color: #333;
+  line-height: 1.42857143;
+  font-family: 'Play', sans-serif;
+  background: #f9f9f9;
+}
+#issue .footer-page {
+  position: relative;
+  margin-top: -10px;
+  padding: 10px;
+  padding-bottom: 50px;
+  background: #f5f5f5;
+}
+#issue .footer-page .ftr-left {
+  margin-top: 5px;
+  padding-right: 10px;
+  float: left;
+  margin-left: 0px;
+}
+#issue .footer-page .ftr-right {
+  margin-top: 5px;
+  padding-left: 10px;
+  float: right;
+  margin-right: 0px;
+}
+#issue .footer-page .ftr-right button {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  outline: none;
+  margin: 0px auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  cursor: not-allowed;
+}
+#issue .footer-page .ftr-right button a {
+  cursor: not-allowed;
+  color: #777;
+  text-decoration: none;
+}
+#issue .footer-page .ftr-right button:first-child {
+  margin-right: -5px;
+}

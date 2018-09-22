@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="report.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+</head>
+<body>
+<section id="nav-bar">
+	<div class="logo">
+		<div class="logo-img">
+			<img src="images/logo_images/logo.png">
+		</div>
+		<div class="logo-name">
+			<h3>MS Library</h3>
+		</div>
+		<div class="navbar-right">
+			<select type="text" class="language">
+				<option value="ar">Arabic</option>
+				<option value="bn">Bangla</option>
+				<option value="en">English</option>
+				<option value="fr">French</option>
+				<option value="ge">Germany</option>
+				<option value="hi">Hindi</option>
+				<option value="sp">Spanish</option>
+				<option value="ur">Urdu</option>
+			</select>
+			<div class="dropdown">
+  				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   				MS Library
+   				<span><i class="fas fa-user-alt"></i></span>
+  				</button>
+
+  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    				<a class="dropdown-item" href="#">Log Out <i class="fas fa-power-off"></i></a>
+  				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="left-menu">
+	<ul class="menu-elements">
+		<li><a href="../index.html">ড্যাশবোর্ড <span><i class="fas fa-tachometer-alt"></i></span></a></li>
+		<li><a href="../member/member.html">সদস্য <span><i class="fas fa-users"></i></span></a></li>
+		<li><a href="../book_archive/book.html">বই আর্কাইভ <span><i class="fas fa-book"></i></span></a></li>
+		<li><a href="../issue&return/issue.html">ইস্যু এবং রিটার্ন <span><i class="fas fa-puzzle-piece"></i></span></a></li>
+		<li><a href="../notice/notice.html">নোটিস             <span><i class="fas fa-envelope"></i></span></a></li>
+		<li><a href="../report/report.html">রিপোর্ট <span><i class="far fa-chart-bar"></i></span></a></li>
+		<li><a href="../setting/setting.html">সেটিংস <span><i class="fas fa-cog"></i></span></a></li>
+	</ul>
+</section>
+<section id="report">
+	<div class="head-page">
+		<div class="left">
+			<i class="far fa-chart-bar"></i>
+			<span>   রিপোর্ট</span>
+		</div>
+		<a href="../index.html">
+			<i class="fas fa-long-arrow-alt-left"></i>
+			Back
+		</a>
+	</div>
+</section>
+<section id="report-left-menu">
+	<div class="col-6">
+		<i class="fas fa-book"></i>
+		<span> বই তথ্য</span>
+	</div>
+	<a href="../report2/right.html">
+		<div class="col-6">
+			<i class="fas fa-users"></i>
+			<span> সদস্যদের বিবরণ</span>
+		</div>
+	</a>
+	<div class="report-left-body">
+		<div class="body-head">
+			<div class="left">
+				<i class="fas fa-book"></i>
+				<span> সর্বমোট  বই : 37</span>
+			</div>
+			<a href="">
+        <div class="right">
+            <i class="fas fa-download"></i>
+        </div>   
+      </a>
+		</div>
+		<table class="table table-bordered table-striped">
+    		<thead>
+      			<tr>
+        			<th class="number">
+        				<span>#</span>
+        			</th>
+        			<th class="type">
+        				<span>প্রকার</span>
+        			</th>
+        			<th class="book">
+        				<span>বই</span>
+        			</th>
+        			<th class="issues">
+        				<span>ইস্যু করা হয়েছে</span>
+        			</th>
+        			<th class="download">
+        				<span>ডাউনলোড...</span>
+        			</th>
+      			</tr>
+    		</thead>
+    		<tbody>
+      			<tr>
+        			<td>1</td>
+        			<td>Academic</td>
+        			<td>17</td>
+        			<td>0</td>
+        			<td>
+        				<button>
+        					<a href="#"><i class="fa fa-print"></i></a>
+        				</button>
+        			</td>
+      			</tr>
+      			<tr>
+        			<td>2</td>
+        			<td>Novels</td>
+        			<td>0</td>
+        			<td>0</td>
+        			<td>
+        				<button>
+        					<a href="#"><i class="fa fa-print"></i></a>
+        				</button>
+        			</td>
+      			</tr>
+      			<tr>
+        			<td>3</td>
+        			<td>Reference</td>
+        			<td>0</td>
+        			<td>0</td><td>
+        				<button>
+        					<a href="#"><i class="fa fa-print"></i></a>
+        				</button>
+        			</td>
+      			</tr>
+      			<tr>
+        			<td>4</td>
+        			<td>Newspaper</td>
+        			<td>0</td>
+        			<td>0</td><td>
+        				<button>
+        					<a href="#"><i class="fa fa-print"></i></a>
+        				</button>
+        			</td>
+      			</tr>
+      			<tr>
+        			<td>5</td>
+        			<td>Travel & Tourism</td>
+        			<td>0</td>
+        			<td>0</td>
+        			<td>
+        				<button>
+        					<a href="#"><i class="fa fa-print"></i></a>
+        				</button>
+        			</td>
+      			</tr>
+      			<tr>
+        			<td>6</td>
+        			<td>Biography</td>
+        			<td>0</td>
+        			<td>0</td>
+        			<td>
+        				<button>
+        					<a href="#"><i class="fa fa-print"></i></a>
+        				</button>
+        			</td>
+      			</tr>
+    		</tbody>
+  		</table>
+	</div>
+</section>
+</body>
+</html>

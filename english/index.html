@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../english/navbar.css">
+</head>
+<body>
+<section id="nav-bar">
+	<div class="logo">
+		<div class="logo-img">
+			<img src="../english/images/logo_images/logo.png">
+		</div>
+		<div class="logo-name">
+			<h3>MS Library</h3>
+		</div>
+		<div class="navbar-right">
+			<select type="text" class="language">
+				<option value="ar">Arabic</option>
+				<option value="bn">Bangla</option>
+				<option value="en">English</option>
+				<option value="fr">French</option>
+				<option value="ge">Germany</option>
+				<option value="hi">Hindi</option>
+				<option value="sp">Spanish</option>
+				<option value="ur">Urdu</option>
+			</select>
+			<div class="dropdown">
+  				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   				MS Library
+   				<span><i class="fas fa-user-alt"></i></span>
+  				</button>
+
+  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    				<a class="dropdown-item" href="#">Log Out <i class="fas fa-power-off"></i></a>
+  				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="left-menu">
+	<ul class="menu-elements">
+		<li><a href="../english/index.html">Dashboard <span><i class="fas fa-tachometer-alt"></i></span></a></li>
+		<li><a href="../english/member/member.html">Member <span><i class="fas fa-users"></i></span></a></li>
+		<li><a href="../english/book_archive/book.html">Boook Archive <span><i class="fas fa-book"></i></span></a></li>
+		<li><a href="../english/issue&return/issue.html">Issue & Return <span><i class="fas fa-puzzle-piece"></i></span></a></li>
+		<li><a href="../english/notice/notice.html">Notice <span><i class="fas fa-envelope"></i></span></a></li>
+		<li><a href="../english/report/report.html">Report <span><i class="far fa-chart-bar"></i></span></a></li>
+		<li><a href="../english/setting/setting.html">Setting <span><i class="fas fa-cog"></i></span></a></li>
+	</ul>
+</section>
+<section id="dashboard-body">
+	<div class="row col-sm-12">
+		<div class="col-md-6 col-sm-12">
+			<div class="panel panel-success">
+				<div class="header">
+					<div class="col-xs-3">
+						<i class="fas fa-users fa-5x"></i>
+					</div>
+					<div class="col-xs-9">
+						<span>6</span>
+					</div>
+				</div>
+			</div>
+			<a href="../english/member/member.html">
+				<div class="footer">
+					<span>Total Member</span>
+					<i class="fas fa-arrow-circle-right"></i>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<div class="panel panel-success">
+				<div class="header-right">
+					<div class="col-xs-3">
+						<i class="fas fa-book fa-5x"></i>
+					</div>
+					<div class="col-xs-9">
+						<span>99</span>
+					</div>
+				</div>
+			</div>
+			<a href="../english/book_archive/book.html">
+				<div class="footer-right">
+					<span>Total Books</span>
+					<i class="fas fa-arrow-circle-right"></i>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="row col-sm-12">
+		<div class="col-md-3 col-sm-12">
+			<div class="panel panel-success">
+				<div class="issue-result">
+					<div class="col-xs-3">
+						<i class="fas fa-chart-line fa-5x"></i>
+					</div>
+					<div class="col-xs-9">
+						<span>0</span>
+					</div>
+				</div>
+			</div>
+			<a href="../english/issue&return/issue.html">
+				<div class="issue-link">
+					<span>Issued Books</span>
+					<i class="fas fa-arrow-circle-right"></i>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 col-sm-12">
+			<div class="panel panel-success">
+				<div class="issue-result-due">
+					<div class="col-xs-3">
+						<i class="fas fa-hourglass-half fa-5x"></i>
+					</div>
+					<div class="col-xs-9">
+						<span>0</span>
+					</div>
+				</div>
+			</div>
+			<a href="../english/issue&return/issue.html">
+				<div class="issue-link-due">
+					<span>Books Due</span>
+					<i class="fas fa-arrow-circle-right"></i>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3 col-sm-12">
+			<div class="panel panel-success">
+				<div class="fine">
+					<div class="col-xs-3">
+						<i class="fas fa-flask fa-5x"></i>
+					</div>
+					<div class="col-xs-9">
+						<span>0</span>
+					</div>
+				</div>
+			</div>
+			<div class="due-fine">
+				<span>Books Due</span>
+				<i class="fas fa-arrow-circle-right"></i>
+			</div>			
+		</div>
+		<div class="col-md-3 col-sm-12">
+			<div class="panel panel-success">
+				<div class="paid">
+					<div class="col-xs-3">
+						<i class="fas fa-snowflake fa-5x"></i>
+					</div>
+					<div class="col-xs-9">
+						<span>32</span>
+					</div>
+				</div>
+			</div>
+			<div class="paid-fine">
+				<span>Paid Fine</span>
+				<i class="fas fa-arrow-circle-right"></i>
+			</div>			
+		</div>
+	</div>
+	<div class="row col-sm-12">
+		<div class="col-md-8 col-sm-12 well">
+			<div class="today-information">
+				<div class="left">
+					<i class="fas fa-leaf"></i>
+					<span>Today Last Date of Return</span>
+				</div>
+			</div>
+			<div class="show">
+				<div class="left-elements">
+					<span>Show</span>
+					<select>
+						<option value="10">10</option>
+						<option value="25">25</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+					</select>
+					<span>entries</span>
+				</div>
+				<div class="right-elements">
+					<span>Search:</span>
+					<input type="text">
+				</div>
+			</div>
+			<div class="today_table">
+				<table class="table table-bordered table-striped">
+	    			<thead>
+	      				<tr>
+	        				<th class="number">
+	        					<span>#</span>
+	        					<i class="fas fa-sort-amount-down"></i>
+	        				</th>
+	        				<th class="id">
+	        					<span>ID</span>
+	        					<i class="fas fa-sort-amount-down"></i>
+	        				</th>
+	        				<th class="book">
+	        					<span>Book</span>
+	        					<i class="fas fa-sort-amount-down"></i>
+	        				</th>
+	        				<th class="date">
+	        					<span>Issue Date</span>
+	        					<i class="fas fa-sort-amount-down"></i>
+	        				</th>
+	        				<th class="rack">
+	        					<span>Rack No.</span>
+	        					<i class="fas fa-sort-amount-down"></i>
+	        				</th>
+	        				<th class="action"bb>
+	        					<span>Action</span>
+	        					<i class="fas fa-sort-amount-down"></i>
+	        				</th>
+	      				</tr>
+	    			</thead>
+	    			<tbody>
+	      				<tr>
+	        				<td valign="top" colspan="8">No data available in table</td>
+	      				</tr>
+	    			</tbody>
+	  			</table>
+			</div>
+			<div class="footer-page">
+				<div class="ftr-left">Showing 0 to 0 of 0 entries
+				</div>
+				<div class="ftr-right">
+					<button><a href="#" class="previous"> Previous</a></button>
+					<button><a href="#" class="next">Next </a></button>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12 well pull-right-lg">
+			<div class="member-information">
+				<div class="left">
+					<i class="fas fa-user"></i>
+					<span>Member Type</span>
+				</div>
+			</div>
+			<div class="member-type-table">
+				<table class="table table-bordered table-striped td-responsive">
+		    		<thead>
+		      			<tr>
+		        			<th class="number">
+		        				<span>#</span>
+		        			</th>
+		        			<th class="type">
+		        				<span>Type</span>
+		        			</th>
+		        			<th class="book-limit">
+		        				<span>Limit Book</span>
+		        			</th>
+		        			<th class="day-limit">
+		        				<span>Limit day</span>
+		        			</th>
+		      			</tr>
+		    		</thead>
+		    		<tbody>
+		      			<tr>
+		        			<td>1</td>
+		        			<td>Guest</td>
+		        			<td>1</td>
+		        			<td>3</td>
+		      			</tr>
+		      			<tr>
+		        			<td>2</td>
+		        			<td>Life Time</td>
+		        			<td>3</td>
+		        			<td>15</td>
+		      			</tr>
+		    		</tbody>
+		  		</table>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12 well pull-right-lg">
+			<div class="category-information">
+				<div class="left">
+					<i class="fas fa-book"></i>
+					<span>Book Category</span>
+				</div>
+			</div>
+			<div class="member-type-table">
+				<table class="table table-bordered table-striped td-responsive">
+		    		<thead>
+		      			<tr>
+		        			<th class="number">
+		        				<span>#</span>
+		        			</th>
+		        			<th class="category">
+		        				<span>Category</span>
+		        			</th>
+		      			</tr>
+		    		</thead>
+		    		<tbody>
+		      			<tr>
+		        			<td>1</td>
+		        			<td>Academic</td>
+		      			</tr>
+		      			<tr>
+		        			<td>2</td>
+		        			<td>Novels</td>
+		      			</tr>
+		      			<tr>
+		        			<td>3</td>
+		        			<td>Reference</td>
+		      			</tr>
+		      			<tr>
+		        			<td>4</td>
+		        			<td>Newspaper</td>
+		      			</tr>
+		      			<tr>
+		        			<td>5</td>
+		        			<td>Travel & Tourism</td>
+		      			</tr>
+		      			<tr>
+		        			<td>6</td>
+		        			<td>Biography</td>
+		      			</tr>
+		    		</tbody>
+		  		</table>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+</html>

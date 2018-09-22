@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="setting.css">
+</head>
+<body>
+<section id="nav-bar">
+	<div class="logo">
+		<div class="logo-img">
+			<img src="images/logo_images/logo.png">
+		</div>
+		<div class="logo-name">
+			<h3>MS Library</h3>
+		</div>
+		<div class="navbar-right">
+			<select type="text" class="language">
+				<option value="ar">Arabic</option>
+				<option value="bn">Bangla</option>
+				<option value="en">English</option>
+				<option value="fr">French</option>
+				<option value="ge">Germany</option>
+				<option value="hi">Hindi</option>
+				<option value="sp">Spanish</option>
+				<option value="ur">Urdu</option>
+			</select>
+			<div class="dropdown">
+  				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   				MS Library
+   				<span><i class="fas fa-user-alt"></i></span>
+  				</button>
+
+  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    				<a class="dropdown-item" href="#">Log Out <i class="fas fa-power-off"></i></a>
+  				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="left-menu">
+	<ul class="menu-elements">
+		<li><a href="../index.html">ড্যাশবোর্ড <span><i class="fas fa-tachometer-alt"></i></span></a></li>
+		<li><a href="../member/member.html">সদস্য <span><i class="fas fa-users"></i></span></a></li>
+		<li><a href="../book_archive/book.html">বই আর্কাইভ <span><i class="fas fa-book"></i></span></a></li>
+		<li><a href="../issue&return/issue.html">ইস্যু এবং রিটার্ন <span><i class="fas fa-puzzle-piece"></i></span></a></li>
+		<li><a href="../notice/notice.html">
+		<li><a href="../bangla/notice/notice.html">নোটিস             <span><i class="fas fa-envelope"></i></span></a></li>
+		<li><a href="../report/report.html">রিপোর্ট <span><i class="far fa-chart-bar"></i></span></a></li>
+		<li><a href="../setting/setting.html">সেটিংস <span><i class="fas fa-cog"></i></span></a></li>
+	</ul>
+</section>
+<section id="setting">
+	<div class="head-page">
+		<div class="left">
+			<i class="fas fa-cog"></i>
+			<span>  সেটিংস</span>
+		</div>
+		<a href="../index.html">
+			<i class="fas fa-long-arrow-alt-left"></i>
+			Back
+		</a>
+	</div>
+	<div class="add-user">
+		<div class="left">
+			<i class="fas fa-sitemap"></i>
+			<span>  ইউজার প্যানেল</span>
+		</div>
+		<div class="right">
+			<a href="#"><i class="fas fa-plus"></i></a>
+		</div>
+	</div>
+	<div class="show">
+		<div class="left-elements">
+			<span>Show</span>
+			<select>
+				<option value="10">10</option>
+				<option value="25">25</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+			</select>
+			<span>entries</span>
+		</div>
+		<div class="right-elements">
+			<span>Search:</span>
+			<input type="text">
+		</div>
+	</div>
+	<div class="setting-table">
+		<table class="table table-bordered table-striped">
+    		<thead>
+      			<tr>
+        			<th class="number">
+        				<span>#</span>
+        				<i class="fas fa-sort-amount-down"></i>
+        			</th>
+        			<th class="user-id">
+        				<span>ইউজার আইডি</span>
+        				<i class="fas fa-sort-amount-down"></i>
+        			</th>
+        			<th class="name">
+        				<span>নাম</span>
+        				<i class="fas fa-sort-amount-down"></i>
+        			</th>
+        			<th class="email">
+        				<span>ই-মেইল</span>
+        				<i class="fas fa-sort-amount-down"></i>
+        			</th>
+        			<th class="phone">
+        				<span>ফোন</span>
+        				<i class="fas fa-sort-amount-down"></i>
+        			</th>
+        			<th class="username">
+        				<span>ইউজারনাম</span>
+        				<i class="fas fa-sort-amount-down"></i>
+        			</th>
+        			<th class="access-type">
+        				<span>অ্যাক্সেস টাইপ</span>
+        				<i class="fas fa-sort-amount-down"></i>
+        			</th>
+        			<th class="action"bb>
+        				<span>করনীয়</span>
+        				<i class="fas fa-sort-amount-down"></i>
+        			</th>
+      			</tr>
+    		</thead>
+    		<tbody>
+      			<tr>
+        			<td>1</td>
+        			<td>1000</td>
+        			<td>MS Library</td>
+        			<td>goutambishwas@gmail.com</td>
+        			<td>01912219987</td>
+        			<td>admin</td>
+        			<td>Admin</td>
+        			<td>
+        				<button>
+        					<i class="far fa-edit"></i>
+        				</button>
+        				<button>
+        					<a href="">
+        						<i class="fas fa-trash-alt"></i>
+        					</a>
+        				</button>
+        			</td>
+      			</tr>
+    		</tbody>
+  		</table>
+	</div>
+	<div class="footer-page">
+		<div class="ftr-left">Showing 1 to 1 of 1 entries
+		</div>
+		<div class="ftr-right">
+			<button><a href="#" class="previous"> Previous</a></button>
+			<button class="number"><a href="#" class="number">1</a></button>
+			<button><a href="#" class="next">Next </a></button>
+		</div>
+	</div>
+</section>
+<section id="setting-body">
+	<div class="row">
+		<div class="col-md-4 col-sm-12">
+			<div class="update">
+				<div class="left">
+					<i class="fas fa-leaf"></i>
+					<span>সাধারণ তথ্য</span>
+				</div>
+				<a href="#">
+					<div class="right">
+						<i class="far fa-edit"></i>
+					</div>
+				</a>
+			</div>
+			<div class="left-table" style="padding-bottom: 30px; padding-top: 15px; padding-right: 10px; padding-left: 10px; background: #f5f5f5">
+				<table class="table table-borderless teble-responsive" style="position: relative; border: 0px solid ">
+		    		<tbody>
+		      			<tr>
+		        			<td style="padding: 8px; vertical-align: top; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143; width: 99px; box-sizing: content-box;">
+		        			সাইটের নাম</td>
+		        			<td style="padding: 8px; vertical-align: top; font-size: 14px; line-height: 1.42857143; width: 24px; box-sizing: content-box; text-align: center; color: #333;">
+		        			:
+		        			</td>
+		        			<td style="width: 241px; padding: 8px;  overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143">
+		        				<img src="../setting/images/logo_images/logo01.png" style="width: 130px">
+		        			</td>
+		      			</tr>
+		      			<tr>
+		        			<td style="padding: 8px; vertical-align: top; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143; width: 99px; box-sizing: content-box;">
+		        			সাইটের নাম</td>
+		        			<td style="padding: 8px; vertical-align: top; font-size: 14px; line-height: 1.42857143; width: 24px; box-sizing: content-box; text-align: center; color: #333;">
+		        			:
+		        			</td>
+		        			<td style="width: 241px; padding: 8px;  overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143">
+		        				MS Library
+		        			</td>
+		      			</tr>
+		      			<tr>
+		        			<td style="padding: 8px; vertical-align: top; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143; width: 99px; box-sizing: content-box;">
+		        			ট্যাগ লাইন</td>
+		        			<td style="padding: 8px; vertical-align: top; font-size: 14px; line-height: 1.42857143; width: 24px; box-sizing: content-box; text-align: center; color: #333;">
+		        			:
+		        			</td>
+		        			<td style="width: 241px; padding: 8px;  overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143">
+		        				Library Management System
+		        			</td>
+		      			</tr>
+		      			<tr>
+		        			<td style="padding: 8px; vertical-align: top; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143; width: 99px; box-sizing: content-box;">
+		        			ফোন</td>
+		        			<td style="padding: 8px; vertical-align: top; font-size: 14px; line-height: 1.42857143; width: 24px; box-sizing: content-box; text-align: center; color: #333;">
+		        			:
+		        			</td>
+		        			<td style="width: 241px; padding: 8px;  overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143">
+		        				01912219987
+		        			</td>
+		      			</tr>
+		      			<tr>
+		        			<td style="padding: 8px; vertical-align: top; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143; width: 99px; box-sizing: content-box;">
+		        			ই-মেইল</td>
+		        			<td style="padding: 8px; vertical-align: top; font-size: 14px; line-height: 1.42857143; width: 24px; box-sizing: content-box; text-align: center; color: #333;">
+		        			:
+		        			</td>
+		        			<td style="width: 241px; padding: 8px;  overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143">
+		        				goutambishwas@gmail.com
+		        			</td>
+		      			</tr>
+		      			<tr>
+		        			<td style="padding: 8px; vertical-align: top; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143; width: 99px; box-sizing: content-box;">
+		        			ঠিকানা</td>
+		        			<td style="padding: 8px; vertical-align: top; font-size: 14px; line-height: 1.42857143; width: 24px; box-sizing: content-box; text-align: center; color: #333;">
+		        			:
+		        			</td>
+		        			<td style="width: 241px; padding: 8px;  overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px; line-height: 1.42857143">
+		        				dhaka, bangladesh
+		        			</td>
+		      			</tr>
+		    		</tbody>
+	  			</table>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12">
+			<div class="add-type">
+				<div class="left">
+					<i class="fas fa-users"></i>
+					<span>  সদস্যের ধরন      </span>
+				</div>
+				<a href="#">
+					<div class="right">
+						<i class="fas fa-plus"></i>
+					</div>
+				</a>
+			</div>
+			<div class="center-table" style="padding-bottom: 15px; padding-top: 15px; padding-right: 10px; padding-left: 10px; background: #f5f5f5">
+				<table class="table table-bordered table-striped" style="position: relative; border: 1px solid #ddd; ">
+		    		<thead>
+		      			<tr>
+		        			<th class="number" style="width: 46px; padding: 10px; text-align: center; color: #333; font-family: 'Glyphicons Halflings'; ">
+		        				<span style="float: left; margin-left: 0px">
+		        					#
+		        				</span>
+		        			</th>
+		        			<th class="type" style="width: 135px; padding: 10px; text-align: center; color: #333; font-family: 'Glyphicons Halflings';">
+		        				<span style="float: left; margin-left: 0px;">
+		        					ধরন
+		        				</span>
+		        			</th>
+		        			<th class="action" style="width: 162px; padding: 10px; text-align: center; color: #333; font-family: 'Glyphicons Halflings';">
+		        				<span style="float: left; margin-left: 0px">
+		        					করনীয়
+		        				</span>
+		        			</th>
+		      			</tr>
+		    		</thead>
+		    		<tbody>
+		      			<tr>
+		        			<td style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">
+		        			1</td>
+		        			<td style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">Guest
+		        			</td>
+		        			<td>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #5bc0de;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="far fa-edit"></i>
+		        					</a>
+		        				</button>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #c9302c;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="fas fa-trash-alt"></i>
+		        					</a>
+		        				</button>
+		        			</td>
+		      			</tr>
+		      			<tr>
+		        			<td  style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">2</td>
+		        			<td style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">
+		        			Life Time</td>
+		        			<td>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #5bc0de;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="far fa-edit"></i>
+		        					</a>
+		        				</button>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #c9302c;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="fas fa-trash-alt"></i>
+		        					</a>
+		        				</button>
+		        			</td>
+		      			</tr>
+		    		</tbody>
+	  			</table>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12">
+			<div class="add-category">
+				<div class="left">
+					<i class="fas fa-book"></i>
+					<span>  বইয়ের প্রকার    </span>
+				</div>
+				<a href="#">
+					<div class="right">
+						<i class="fas fa-plus"></i>
+					</div>
+				</a>
+			</div>
+			<div class="right-table" style="padding-bottom: 15px; padding-top: 15px; padding-right: 10px; padding-left: 10px; background: #f5f5f5">
+				<table class="table table-bordered table-striped" style="position: relative; border: 1px solid #ddd; ">
+		    		<thead>
+		      			<tr>
+		        			<th class="number" style="width: 37px; padding: 10px; text-align: center; color: #333; font-family: 'Glyphicons Halflings'; ">
+		        				<span style="float: left; margin-left: 0px">
+		        					#
+		        				</span>
+		        			</th>
+		        			<th class="type" style="width: 175px; padding: 10px; text-align: center; color: #333; font-family: 'Glyphicons Halflings';">
+		        				<span style="float: left; margin-left: 0px;">
+		        					প্রকার
+		        				</span>
+		        			</th>
+		        			<th class="action" style="width: 131px; padding: 10px; text-align: center; color: #333; font-family: 'Glyphicons Halflings';">
+		        				<span style="float: left; margin-left: 0px">
+		        					করনীয়
+		        				</span>
+		        			</th>
+		      			</tr>
+		    		</thead>
+		    		<tbody>
+		      			<tr>
+		        			<td style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">
+		        			1</td>
+		        			<td style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">Academic
+		        			</td>
+		        			<td>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #5bc0de;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="far fa-edit"></i>
+		        					</a>
+		        				</button>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #c9302c;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="fas fa-trash-alt"></i>
+		        					</a>
+		        				</button>
+		        			</td>
+		      			</tr>
+		      			<tr>
+		        			<td  style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">2</td>
+		        			<td style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">
+		        			Novels</td>
+		        			<td>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #5bc0de;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="far fa-edit"></i>
+		        					</a>
+		        				</button>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #c9302c;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="fas fa-trash-alt"></i>
+		        					</a>
+		        				</button>
+		        			</td>
+		      			</tr>
+		      			<tr>
+		        			<td  style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">3</td>
+		        			<td style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">
+		        			Reference</td>
+		        			<td>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #5bc0de;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="far fa-edit"></i>
+		        					</a>
+		        				</button>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #c9302c;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="fas fa-trash-alt"></i>
+		        					</a>
+		        				</button>
+		        			</td>
+		      			</tr>
+		      			<tr>
+		        			<td  style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">4</td>
+		        			<td style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">
+		        			Newspaper</td>
+		        			<td>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #5bc0de;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="far fa-edit"></i>
+		        					</a>
+		        				</button>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #c9302c;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="fas fa-trash-alt"></i>
+		        					</a>
+		        				</button>
+		        			</td>
+		      			</tr>
+		      			<tr>
+		        			<td  style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">5</td>
+		        			<td style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">
+		        			Travel & Tourism</td>
+		        			<td>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #5bc0de;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="far fa-edit"></i>
+		        					</a>
+		        				</button>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #c9302c;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="fas fa-trash-alt"></i>
+		        					</a>
+		        				</button>
+		        			</td>
+		      			</tr>
+		      			<tr>
+		        			<td  style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">6</td>
+		        			<td style="padding: 8px; overflow: hidden; box-sizing: content-box; color: #333; font-size: 14px;">
+		        			Biography</td>
+		        			<td>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #5bc0de;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="far fa-edit"></i>
+		        					</a>
+		        				</button>
+		        				<button style="outline: none; cursor: pointer; float: left; box-sizing: border-box; text-align: center; border-radius: 3px; border: none; background: #c9302c;
+		        				margin-left: 3px; margin-right: 3px">
+		        					<a href="#" style="color: #fff">
+		        						<i class="fas fa-trash-alt"></i>
+		        					</a>
+		        				</button>
+		        			</td>
+		      			</tr>
+		    		</tbody>
+	  			</table>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+</html>
